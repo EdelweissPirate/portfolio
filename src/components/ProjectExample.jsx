@@ -25,7 +25,7 @@ function ProjectExample(props) {
 
     return (
         <div className="example-project glass fadeIn">
-                <div style={{height: '100%'}}>
+                <div style={{height: '100%', display: 'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center'}}>
                     <h2>
                         {name}
                     </h2>
@@ -44,7 +44,7 @@ function ProjectExample(props) {
                             {truncateText(description, 150)}
                         </p>
                         <p>
-                            {truncateText(comments, window.innerWidth > 900 ? 400 : 200)}
+                            {truncateText(comments, window.innerWidth > 900 ? 400 : 150)}
                         </p>
                     </article>
                     <div style={{width: window.innerWidth > 900 ? '60%' : '100%', display: 'flex', flexDirection: 'row', alignSelf: 'center'}}>

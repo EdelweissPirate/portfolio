@@ -35,7 +35,7 @@
 </div>
 
 <p>
-    Created using npm create vite@latest and ReactJS.
+    Created using npm create vite@latest and ReactJS. I wanted to go kind of over the top with this one.
 </p>
 
 ---
