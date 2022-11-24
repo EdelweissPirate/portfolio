@@ -52,7 +52,7 @@ function CustomCanvas({ isClicked }) {
                     zoom: window.innerWidth > 900 ? .8 : .4 
                 }}
             >
-                {/* <CameraController /> */}
+                <CameraController />
                 <ambientLight />
                 <pointLight position={[10, 10, 10]} />
 

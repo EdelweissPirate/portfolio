@@ -42,7 +42,7 @@ function Home() {
             </section>
             : 
             <div style={{display: window.innerWidth > 900 ? 'none' : 'block'}}>
-                <button onClick={() => showProject(true)} className="btn glass-btn center-absolute" style={{position: 'absolute', top: '70%', maxWidth: '50%'}}>
+                <button onPointerUp={() => showProject(true)} className="btn glass-btn center-absolute" style={{position: 'absolute', top: '70%', maxWidth: '50%'}}>
                     VIEW
                 </button>
             </div>

@@ -33,19 +33,19 @@ function Model(props) {
       const r = props.radius
 
       if(!clicked){
-        // if(props.direction === 'clockwise'){
-        //   chassis.current.rotation.y += 0.3
-        //   lights.current.rotation.y += 0.3
-        //   ref.current.position.x = (r * Math.cos(clock.getElapsedTime() * (1 + props.speed)))
-        //   ref.current.position.z = (r * Math.sin(clock.getElapsedTime() * (1 + props.speed)))
-        // } else {
-        //   chassis.current.rotation.y -= 0.3
-        //   lights.current.rotation.y -= 0.3
-        //   ref.current.position.x = (r * Math.sin(clock.getElapsedTime() * (1 + props.speed)))
-        //   ref.current.position.z = (r * Math.cos(clock.getElapsedTime() * (1 + props.speed)))
-        // }
+        if(props.direction === 'clockwise'){
+          chassis.current.rotation.y += 0.3
+          lights.current.rotation.y += 0.3
+          ref.current.position.x = (r * Math.cos(clock.getElapsedTime() * (1 + props.speed)))
+          ref.current.position.z = (r * Math.sin(clock.getElapsedTime() * (1 + props.speed)))
+        } else {
+          chassis.current.rotation.y -= 0.3
+          lights.current.rotation.y -= 0.3
+          ref.current.position.x = (r * Math.sin(clock.getElapsedTime() * (1 + props.speed)))
+          ref.current.position.z = (r * Math.cos(clock.getElapsedTime() * (1 + props.speed)))
+        }
   
-        // ref.current.position.y = (props.position[1] + 3 * Math.sin(clock.getElapsedTime() / 2))
+        ref.current.position.y = (props.position[1] + 3 * Math.sin(clock.getElapsedTime() / 2))
   
         function randNum() {
           return Math.random() * 2

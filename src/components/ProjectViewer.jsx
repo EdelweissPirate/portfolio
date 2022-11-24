@@ -37,7 +37,7 @@ function ProjectViewer(props) {
 
     return (
         <>
-            <div className='fadeIn-delay' style={{position: 'absolute', top: window.innerWidth > 900 ? '5%' : '0%', left: window.innerWidth > 900 ? '90%' : '80%', zIndex: '999'}}>
+            <div className='fadeIn-delay' style={{position: 'absolute', top: window.innerWidth > 900 ? '5%' : '0%', left: window.innerWidth > 900 ? '92%' : '80%', zIndex: '999'}}>
                 <button onClick={handleClose}><h5>CLOSE</h5></button>
             </div>
             {window.innerWidth > 900 ? 
