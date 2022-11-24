@@ -39,7 +39,7 @@ function CustomCanvas({ isClicked }) {
     }
 
     return (
-        <Suspense fallback={'Loading Three.js'}>
+        <Suspense fallback={'Loading Three.js...'}>
             <Canvas
                 gl={{
                 powerPreference: "high-performance",

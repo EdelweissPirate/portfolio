@@ -51,6 +51,7 @@ function ProjectViewer(props) {
                     })}
                 </div>
             }
+            <div className="spacer"></div>
         </>
     )
 }

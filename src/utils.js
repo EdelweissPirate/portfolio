@@ -21,7 +21,7 @@ const projects = [
     {
         name: 'Final Fantasy 7 Menu',
         tech: ['react', 'three', 'tailwind'],
-        description: 'Purely for fun recreation of the Final Fantasy 7 start menu', 
+        description: 'Purely for fun recreation of the Final Fantasy 7 start menu.', 
         comments: 'Created using ReactJS, Made this quite a while ago to get used to making components. Particularly happy with the mobile version but the menu seems to be playing up at the moment.',
         url: 'https://edelweisspirate.github.io/',
         repo: 'https://github.com/EdelweissPirate/edelweisspirate.github.io'
