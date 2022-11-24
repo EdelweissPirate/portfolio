@@ -351,6 +351,12 @@ article p {
     justify-content: space-around
   }
 
+  .spacer {
+    height: 0em;
+    min-height: 0em;
+    padding: 0em 0em;
+  }
+
   .badges[data-type='card'] {
     width: 100%;
     display: flex;

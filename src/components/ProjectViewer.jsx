@@ -37,6 +37,7 @@ function ProjectViewer(props) {
 
     return (
         <>
+            <div className="spacer"></div>
             <div className='fadeIn-delay' style={{position: 'absolute', top: window.innerWidth > 900 ? '5%' : '0%', left: window.innerWidth > 900 ? '92%' : '80%', zIndex: '999'}}>
                 <button onClick={handleClose}><h5>CLOSE</h5></button>
             </div>
@@ -49,9 +50,9 @@ function ProjectViewer(props) {
                     {projects.map((item, i) => {
                         return <ProjectExample key={`pE - ${i}`} {...item} />
                     })}
+                    <div className="spacer"></div>
                 </div>
             }
-            <div className="spacer"></div>
         </>
     )
 }
