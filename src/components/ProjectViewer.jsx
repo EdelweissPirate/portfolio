@@ -36,9 +36,8 @@ function ProjectViewer(props) {
     }
 
     return (
-        <>  
-            <div className="spacer"></div>
-            <div className='fadeIn-delay' style={{position: 'absolute', top: window.innerWidth > 900 ? '5%' : '2.5%', left: window.innerWidth > 900 ? '90%' : '80%', zIndex: '999'}}>
+        <>
+            <div className='fadeIn-delay' style={{position: 'absolute', top: window.innerWidth > 900 ? '5%' : '0%', left: window.innerWidth > 900 ? '90%' : '80%', zIndex: '999'}}>
                 <button onClick={handleClose}><h5>CLOSE</h5></button>
             </div>
             {window.innerWidth > 900 ? 
@@ -52,7 +51,6 @@ function ProjectViewer(props) {
                     })}
                 </div>
             }
-            <div className="spacer"></div>
         </>
     )
 }
